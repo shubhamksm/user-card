@@ -1,10 +1,10 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ onClickHandler }) => {
   return <div className="header">
     <div className="h1">User Cards</div>
-    <button className="get-user">Get User</button>
+    <button onClick={onClickHandler} className="get-user">Get User</button>
   </div>
 }
 
